@@ -11,6 +11,7 @@ public class ApiFetcher
     private readonly string _outputDir;
     private readonly IJsonProcessor? _jsonProcessor;
     private static readonly HttpClient _http = new HttpClient() { Timeout = TimeSpan.FromSeconds(30) };
+    private const string DefaultOutputFileName = "latest_api_data.json";
 
     public ApiFetcher(DatabaseService db, string outputDir, IJsonProcessor? jsonProcessor = null)
     {
@@ -29,12 +30,13 @@ public class ApiFetcher
     {
     output ??= Console.Out;
     output.WriteLine($"開始從 API 取得資料: {url}");
-    Log.Debug("ApiFetcher.FetchAndStoreAsync 開始: {Url}", url);
+    Log.Information("[API抓取] 開始從 {Url} 取得資料", url);
 
-        string? json = null;
-        var attempts = 0;
-        var maxAttempts = 3;
-        var delay = 1000;
+    string? json = null;
+    var attempts = 0;
+    var maxAttempts = 3;
+    var delay = 1000;
+    Log.Debug("[API抓取] 設定: 最大重試次數={MaxAttempts}, 延遲={Delay}ms", maxAttempts, delay);
 
         while (attempts < maxAttempts)
         {
@@ -45,7 +47,35 @@ public class ApiFetcher
                 using var res = await _http.SendAsync(req);
                 res.EnsureSuccessStatusCode();
                 json = await res.Content.ReadAsStringAsync();
-                Log.Debug("ApiFetcher fetched {Bytes} bytes from {Url}", json?.Length ?? 0, url);
+                Log.Information("[API抓取] 成功取得 {Bytes:N0} 位元組資料，狀態碼: {StatusCode}", 
+                    json?.Length ?? 0, (int)res.StatusCode);
+                
+                // 檢查 JSON 資料結構
+                try {
+                    if (string.IsNullOrEmpty(json))
+                    {
+                        Log.Warning("[API抓取] 收到空的 JSON 回應");
+                        return;
+                    }
+                    var doc = JsonDocument.Parse(json);
+                    var root = doc.RootElement;
+                    if (root.ValueKind == JsonValueKind.Array)
+                    {
+                        Log.Information("[API抓取] 資料為陣列格式，包含 {Count} 筆記錄", root.GetArrayLength());
+                        // 記錄第一筆資料的欄位名稱
+                        if (root.GetArrayLength() > 0)
+                        {
+                            var firstItem = root[0];
+                            var properties = firstItem.EnumerateObject().Select(p => p.Name).ToList();
+                            Log.Debug("[API抓取] 資料欄位: {Fields}", string.Join(", ", properties));
+                        }
+                    }
+                }
+                catch (JsonException ex)
+                {
+                    Log.Warning("[API抓取] JSON 解析檢查時發生錯誤: {Error}", ex.Message);
+                }
+                
                 break;
             }
             catch (Exception ex)
@@ -64,10 +94,13 @@ public class ApiFetcher
 
         if (string.IsNullOrWhiteSpace(json))
         {
+            Log.Warning("[API抓取] 抓取到的內容為空，結束處理");
             output.WriteLine("抓取到的內容為空，結束處理。");
             return;
         }
 
+        Log.Information("[API抓取] 開始儲存和處理資料");
+        
         // 簡單驗證 JSON
         try
         {
@@ -105,9 +138,7 @@ public class ApiFetcher
         // 也將原始 JSON 寫入 App_Data 以便現有 JSON 處理器使用
         try
         {
-            var outFile = outputFileName != null
-                ? Path.Combine(_outputDir, outputFileName)
-                : Path.Combine(_outputDir, $"api_fetch_{DateTime.UtcNow:yyyyMMdd_HHmmss}.json");
+            var outFile = outputFileName ?? Path.Combine(_outputDir, DefaultOutputFileName);
             await File.WriteAllTextAsync(outFile, json);
             output.WriteLine($"已另存原始 JSON 至: {outFile}");
             Log.Debug("ApiFetcher wrote JSON to {OutFile}", outFile);

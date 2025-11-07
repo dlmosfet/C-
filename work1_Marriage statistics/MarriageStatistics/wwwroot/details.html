@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>詳細資料表 - 婚姻統計</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">婚姻統計資料分析</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">總覽</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/details.html">詳細資料</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">分析</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h3>區域明細</h3>
+            <div class="table-responsive">
+                <table class="table table-hover" id="area-details-table">
+                    <thead>
+                        <tr>
+                            <th>區域</th>
+                            <th>總計</th>
+                            <th>同性別</th>
+                            <th>不同性別</th>
+                            <th>比例</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div id="entry-detail" class="card d-none">
+                <div class="card-body">
+                    <h5 class="card-title">紀錄內容</h5>
+                    <p id="entry-meta"></p>
+                    <pre id="entry-json" style="max-height:400px;overflow:auto;background:#f8f9fa;padding:10px;"></pre>
+                    <a id="entry-download" class="btn btn-sm btn-outline-primary" href="#" target="_blank">下載原始檔</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/scripts.js"></script>
+<script>
+(async function(){
+    const apiGetChart = async () => {
+        try { const res = await fetch('/api/chart-data'); return await res.json(); } catch(e){ console.error(e); return null }
+    }
+    const apiGetEntries = async () => { try { const res = await fetch('/api/entries'); return await res.json(); } catch(e){ console.error(e); return [] } }
+    const apiGetEntry = async (id) => { try { const res = await fetch(`/api/entry/${id}`); return res.ok ? await res.json() : null } catch(e){ console.error(e); return null } }
+
+    // populate area table
+    const chart = await apiGetChart();
+    const tbody = document.querySelector('#area-details-table tbody');
+    if (chart && chart.areaData) {
+        tbody.innerHTML = chart.areaData.map(d => {
+            const percent = chart.areaData.reduce((s, it) => s + it.value, 0);
+            const p = percent>0 ? ((d.value/percent)*100).toFixed(1) : '0.0';
+            return `\n                <tr>\n                    <td>${d.name}</td>\n                    <td>${d.value}</td>\n                    <td>${d.sameGender ?? '-'}</td>\n                    <td>${d.differentGender ?? '-'}</td>\n                    <td>${p}%</td>\n                </tr>`
+        }).join('')
+    } else {
+        tbody.innerHTML = '<tr><td colspan="5">無資料</td></tr>'
+    }
+
+    // populate entries table
+    const entries = await apiGetEntries();
+    const etbody = document.querySelector('#entries-table tbody');
+    etbody.innerHTML = entries.map(en => `
+        <tr>
+            <td>${en.id}</td>
+            <td>${en.source}</td>
+            <td>${new Date(en.timestamp).toLocaleString()}</td>
+            <td>
+                <button class="btn btn-sm btn-outline-primary" data-id="${en.id}">查看</button>
+                <a class="btn btn-sm btn-outline-secondary" href="/api/download/${en.id}" target="_blank">下載</a>
+            </td>
+        </tr>
+    `).join('')
+
+    // click handlers for view buttons
+    etbody.querySelectorAll('button[data-id]').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const id = btn.getAttribute('data-id');
+            const entry = await apiGetEntry(id);
+            if (entry) {
+                document.getElementById('entry-detail').classList.remove('d-none');
+                document.getElementById('entry-meta').textContent = `來源：${entry.source} ／ 時間：${new Date(entry.timestamp).toLocaleString()} ／ 檔名：${entry.fileName}`;
+                // fetch file content if exists
+                try {
+                    const dl = await fetch(`/api/download/${id}`);
+                    if (dl.ok) {
+                        // try to load file text
+                        const txt = await dl.text();
+                        document.getElementById('entry-json').textContent = txt;
+                        document.getElementById('entry-download').href = `/api/download/${id}`;
+                    } else {
+                        document.getElementById('entry-json').textContent = entry.summary ?? '(no preview available)';
+                        document.getElementById('entry-download').href = `/api/download/${id}`;
+                    }
+                } catch (err) {
+                    document.getElementById('entry-json').textContent = entry.summary ?? '(no preview)';
+                    document.getElementById('entry-download').href = `/api/download/${id}`;
+                }
+            }
+        })
+    })
+
+    // if ?id= present, auto-open
+    const qp = new URLSearchParams(window.location.search);
+    if (qp.has('id')) {
+        const id = qp.get('id');
+        const btn = document.querySelector(`button[data-id='${id}']`);
+        if (btn) btn.click();
+    }
+})();
+</script>
+</body>
+</html>

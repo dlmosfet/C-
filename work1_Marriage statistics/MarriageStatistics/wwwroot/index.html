@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#" data-view="dashboard">總覽</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-view="fetch">資料抓取</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/details.html">詳細資料</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" data-view="analysis">詳細分析</a></li>
                 </ul>
             </div>
@@ -103,40 +103,7 @@
             </div>
         </div>
 
-        <!-- Fetch Data View -->
-        <div id="fetch-view" class="view-section d-none">
-            <div class="card shadow-sm mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">資料抓取</h5>
-                    <div class="input-group mb-3">
-                        <input type="text" id="apiUrl" class="form-control" placeholder="API URL" value="https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json">
-                        <button class="btn btn-primary" id="fetchBtn">
-                            <i class="bi bi-cloud-download"></i> 抓取
-                        </button>
-                    </div>
-                    <div class="alert alert-info d-none" id="fetchStatus"></div>
-                </div>
-            </div>
-
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">抓取記錄</h5>
-                    <div class="table-responsive">
-                        <table class="table table-hover" id="fetch-history">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>來源</th>
-                                    <th>時間</th>
-                                    <th>動作</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Fetch Data view removed; replaced by standalone details page -->
 
         <!-- Analysis View -->
         <div id="analysis-view" class="view-section d-none">
@@ -152,35 +119,17 @@
                 <div class="col-lg-6 mb-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">年齡層分布</h5>
-                            <canvas id="age-chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">詳細資料表</h5>
-                            <div class="table-responsive">
-                                <table class="table table-hover" id="details-table">
-                                    <thead>
-                                        <tr>
-                                            <th>區域</th>
-                                            <th>總計</th>
-                                            <th>同性別</th>
-                                            <th>不同性別</th>
-                                            <th>比例</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+                            <h5 class="card-title">國籍分布</h5>
+                            <canvas id="nationality-bar" style="max-height:260px;"></canvas>
+                            <hr />
+                            <div class="d-flex justify-content-center">
+                                <canvas id="nationality-pie" style="width:200px;height:200px"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </main>
 

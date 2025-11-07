@@ -10,6 +10,7 @@ public class MarriageStats
     public int TotalDifferentGender { get; set; }
     public int TotalSameGender { get; set; }
     public List<AreaStats> ByArea { get; set; } = new();
+    public Dictionary<string, NationalityCount> NationalityBreakdown { get; set; } = new();
 }
 
 public class AreaStats

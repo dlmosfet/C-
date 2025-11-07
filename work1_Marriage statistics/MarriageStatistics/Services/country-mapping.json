@@ -1,0 +1,19 @@
+{
+  "mappings": {
+    "臺灣": ["台灣", "臺灣", "中華民國", "taiwan", "roc"],
+    "中國（大陸）": ["中國", "大陸", "china", "prc"],
+    "香港": ["香港", "港", "hong kong", "hk"],
+    "澳門": ["澳門", "澳", "macau", "macao"],
+    "菲律賓": ["菲律賓", "philippines", "philippine", "ph"],
+    "越南": ["越南", "vietnam", "vn"],
+    "緬甸": ["緬甸", "burma", "myanmar"],
+    "泰國": ["泰國", "thailand", "th"],
+    "日本": ["日本", "japan", "jp"],
+    "韓國": ["韓國", "south korea", "korea", "kr", "republic of korea"],
+    "美國": ["美國", "usa", "us", "united states"],
+    "加拿大": ["加拿大", "canada", "ca"],
+    "英國": ["英國", "uk", "united kingdom", "gb"],
+    "澳大利亞": ["澳大利亞", "australia", "au"],
+    "紐西蘭": ["紐西蘭", "new zealand", "nz"]
+  }
+}

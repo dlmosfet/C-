@@ -76,3 +76,1037 @@ System.InvalidOperationException: The data is NULL at ordinal 1. This method can
 2025-11-07 18:06:10.145 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
 2025-11-07 18:06:10.197 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
 2025-11-07 18:06:10.586 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:16:10.836 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:17:23.064 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:18:58.026 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:18:58.073 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:18:58.082 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:18:58.298 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:18:58.308 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:18:58.312 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:18:58.376 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 18:18:58.402 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:28:58.415 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:28:58.593 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:28:58.606 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:28:58.609 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:28:58.679 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 18:28:58.692 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:30:43.666 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:30:43.706 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:30:43.714 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:30:43.739 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 18:32:14.829 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:32:32.721 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:32:32.865 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:32:32.890 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:32:33.228 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:32:33.248 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:32:33.262 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:32:33.429 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 18:32:33.438 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 18:32:33.445 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 18:32:33.455 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 18:32:33.465 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 18:32:33.478 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 18:32:33.489 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:32:33.503 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:32:33.514 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 18:32:33.522 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 18:32:33.535 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 18:32:33.543 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 18:32:33.547 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:32:33.550 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:32:33.556 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 18:32:33.562 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 18:32:33.566 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:32:33.570 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:32:33.577 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 18:32:33.580 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 18:32:33.586 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:32:33.591 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 18:32:33.594 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 18:32:33.598 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 18:32:33.605 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:32:33.609 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:32:33.612 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:32:33.616 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:32:33.631 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:32:33.700 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:33:02.625 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:33:02.632 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:33:02.635 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:33:02.649 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:40:21.851 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:41:35.305 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:41:35.388 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:41:35.400 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:41:35.790 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:41:35.802 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:41:35.807 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:41:35.895 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 18:41:35.899 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 18:41:35.902 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 18:41:35.906 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 18:41:35.910 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 18:41:35.915 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 18:41:35.918 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:41:35.922 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:41:35.926 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 18:41:35.929 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 18:41:35.932 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 18:41:35.936 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 18:41:35.940 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:41:35.946 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:41:35.950 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 18:41:35.954 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 18:41:35.959 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:41:35.963 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:41:35.967 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 18:41:35.971 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 18:41:35.974 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:41:35.977 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 18:41:35.982 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 18:41:35.985 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 18:41:35.988 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:41:35.992 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:41:35.996 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:41:36.001 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:41:36.016 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:41:36.061 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:41:36.089 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:41:36.102 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:41:36.104 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:41:36.131 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:41:36.217 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:41:36.244 +08:00 [ERR] GetChartDataAsync 失敗
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 221
+2025-11-07 18:41:36.365 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:41:36.378 +08:00 [ERR] GetChartDataAsync 失敗
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 221
+2025-11-07 18:41:40.849 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:41:40.855 +08:00 [ERR] GetChartDataAsync 失敗
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 221
+2025-11-07 18:41:40.886 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:41:40.905 +08:00 [ERR] GetChartDataAsync 失敗
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 221
+2025-11-07 18:46:49.662 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:47:26.802 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:47:26.885 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:47:26.899 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:47:27.296 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:47:27.306 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:47:27.317 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:47:27.423 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 18:47:27.427 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 18:47:27.430 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 18:47:27.435 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 18:47:27.440 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 18:47:27.445 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 18:47:27.452 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:47:27.456 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:47:27.460 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 18:47:27.463 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 18:47:27.466 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 18:47:27.470 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 18:47:27.473 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:47:27.476 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:47:27.480 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 18:47:27.483 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 18:47:27.487 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:47:27.496 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:47:27.500 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 18:47:27.508 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 18:47:27.517 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:47:27.522 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 18:47:27.527 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 18:47:27.530 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 18:47:27.533 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:47:27.538 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:47:27.541 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:47:27.543 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:47:27.556 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:47:27.599 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:47:27.858 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:47:27.868 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:47:27.871 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:47:27.887 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:47:27.941 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:47:27.946 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:47:27.955 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:47:27.995 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:47:28.076 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:47:28.079 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:47:28.086 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:47:28.093 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:53:49.037 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:54:02.392 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:54:02.503 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:54:02.515 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:54:02.848 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:54:02.868 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:54:02.879 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:54:03.003 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 18:54:03.013 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 18:54:03.024 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 18:54:03.031 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 18:54:03.038 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 18:54:03.044 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 18:54:03.052 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:54:03.056 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:54:03.059 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 18:54:03.062 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 18:54:03.065 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 18:54:03.071 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 18:54:03.075 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:54:03.078 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:54:03.081 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 18:54:03.085 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 18:54:03.088 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:54:03.092 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:54:03.095 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 18:54:03.098 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 18:54:03.100 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:54:03.103 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 18:54:03.106 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 18:54:03.108 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 18:54:03.112 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:54:03.115 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:54:03.117 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:54:03.120 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:54:03.129 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:54:03.168 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:54:03.974 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:54:03.982 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:54:03.984 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:54:04.000 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:54:04.074 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:54:04.080 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:54:04.090 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:54:04.137 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:54:04.203 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:54:04.205 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:54:04.210 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:54:04.217 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:59:05.480 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:59:19.516 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:59:19.580 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:59:19.594 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 18:59:19.859 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 18:59:19.869 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 18:59:19.873 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 18:59:19.952 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 18:59:19.956 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 18:59:19.961 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 18:59:19.965 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 18:59:19.968 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 18:59:19.971 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 18:59:19.975 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:59:19.978 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 18:59:19.983 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 18:59:19.987 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 18:59:19.993 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 18:59:19.997 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 18:59:20.001 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:59:20.005 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 18:59:20.009 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 18:59:20.013 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 18:59:20.015 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:59:20.018 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:59:20.021 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 18:59:20.025 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 18:59:20.028 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 18:59:20.031 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 18:59:20.034 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 18:59:20.037 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 18:59:20.040 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:59:20.043 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:59:20.046 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:59:20.049 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 18:59:20.062 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:59:20.105 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 18:59:20.200 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 18:59:20.212 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 18:59:20.216 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 18:59:20.237 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 18:59:20.288 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:59:20.297 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:59:20.303 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:59:20.333 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:59:20.396 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:59:20.399 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:59:20.404 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:59:20.415 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 18:59:42.933 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 18:59:42.936 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 18:59:42.941 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 18:59:42.948 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:00:40.165 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:00:52.322 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:00:52.464 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:00:52.483 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:00:52.803 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:00:52.814 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:00:52.825 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:00:52.973 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:00:52.980 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:00:52.987 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:00:52.993 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:00:52.996 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:00:52.999 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:00:53.003 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:00:53.007 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:00:53.011 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:00:53.016 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:00:53.021 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:00:53.025 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:00:53.028 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:00:53.031 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:00:53.037 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:00:53.034 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:00:53.043 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:00:53.048 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:00:53.056 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:00:53.061 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:00:53.065 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:00:53.071 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:00:53.075 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:00:53.079 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:00:53.084 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:00:53.087 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:00:53.091 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:00:53.095 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:00:53.098 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:00:53.098 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:00:53.107 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:00:53.113 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:00:53.133 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:00:53.149 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:01:36.333 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:01:36.338 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:01:36.340 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:01:36.349 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:01:36.372 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:01:36.378 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:01:36.390 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:01:36.415 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:01:36.470 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:01:36.475 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:01:36.480 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:01:36.495 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:03:00.764 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:03:12.886 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:03:13.011 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:03:13.023 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:03:13.325 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:03:13.337 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:03:13.344 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:03:13.444 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:03:13.447 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:03:13.450 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:03:13.453 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:03:13.456 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:03:13.460 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:03:13.464 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:03:13.467 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:03:13.472 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:03:13.475 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:03:13.478 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:03:13.482 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:03:13.487 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:03:13.493 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:03:13.497 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:03:13.500 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:03:13.502 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:03:13.506 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:03:13.511 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:03:13.514 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:03:13.517 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:03:13.520 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:03:13.524 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:03:13.528 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:03:13.530 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:03:13.533 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:03:13.536 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:03:13.539 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:03:13.550 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:03:13.591 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:03:13.663 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:03:13.676 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:03:13.685 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:03:13.716 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:03:13.781 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:03:13.786 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:03:13.795 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:03:13.815 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:03:13.890 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:03:13.894 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:03:13.899 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:03:13.910 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:08:21.901 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:08:34.709 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:08:34.757 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:08:34.766 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:08:35.025 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:08:35.035 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:08:35.042 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:08:35.115 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:08:35.118 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:08:35.121 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:08:35.124 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:08:35.126 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:08:35.128 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:08:35.132 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:08:35.135 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:08:35.138 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:08:35.140 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:08:35.142 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:08:35.144 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:08:35.147 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:08:35.150 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:08:35.153 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:08:35.155 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:08:35.157 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:08:35.159 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:08:35.161 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:08:35.164 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:08:35.167 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:08:35.169 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:08:35.171 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:08:35.173 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:08:35.175 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:08:35.178 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:08:35.180 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:08:35.183 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:08:35.193 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:08:35.225 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:11:21.935 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:11:21.942 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:11:21.944 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:11:21.984 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:11:22.058 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:11:22.065 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:11:22.082 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:11:22.124 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:11:32.030 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:11:32.033 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:11:32.039 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:11:32.048 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:11:38.308 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:11:38.311 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:11:38.316 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:11:38.322 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:12:58.108 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:12:58.112 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:12:58.119 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:12:58.126 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:13:01.365 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:13:01.369 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:13:01.374 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:13:01.383 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:15:07.388 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:15:07.394 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:15:07.399 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:15:07.405 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:15:08.478 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:15:08.481 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:15:08.485 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:15:08.490 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:15:09.287 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:15:09.290 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:15:09.295 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:15:09.301 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:15:11.902 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:15:11.904 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:15:11.909 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:15:11.918 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:18:35.237 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:18:35.451 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:18:35.453 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:18:35.455 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:18:35.499 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:18:35.502 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:18:35.505 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:18:35.507 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:18:35.509 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:18:35.511 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:18:35.513 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:18:35.515 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:18:35.517 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:18:35.519 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:18:35.522 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:18:35.523 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:18:35.525 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:18:35.527 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:18:35.529 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:18:35.531 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:18:35.533 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:18:35.535 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:18:35.538 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:18:35.540 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:18:35.542 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:18:35.544 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:18:35.546 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:18:35.549 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:18:35.550 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:18:35.552 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:18:35.555 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:18:35.557 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:18:35.559 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:18:35.563 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:18:54.440 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:22:42.004 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:22:42.075 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:22:42.087 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:22:42.334 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:22:42.343 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:22:42.348 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:22:42.455 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:22:42.460 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:22:42.463 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:22:42.466 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:22:42.469 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:22:42.471 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:22:42.476 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:22:42.478 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:22:42.481 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:22:42.485 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:22:42.487 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:22:42.489 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:22:42.493 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:22:42.495 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:22:42.498 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:22:42.501 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:22:42.503 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:22:42.505 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:22:42.509 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:22:42.512 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:22:42.514 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:22:42.517 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:22:42.519 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:22:42.521 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:22:42.524 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:22:42.527 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:22:42.530 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:22:42.533 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:22:42.542 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:22:42.580 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:22:43.202 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:22:43.210 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:22:43.213 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:22:43.232 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:22:43.314 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:22:43.330 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:22:43.344 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:22:43.388 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:22:51.494 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:22:51.497 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:22:51.506 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:22:51.514 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:22:54.847 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:22:54.850 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:22:54.856 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:22:54.862 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:23:01.191 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:23:01.197 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:23:01.207 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:23:01.220 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:23:01.607 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:23:01.609 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:23:01.613 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:23:01.619 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:23:04.124 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:23:04.126 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:23:04.131 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:23:04.138 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:23:04.661 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:23:04.663 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:23:04.669 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:23:04.676 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:30:58.766 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:37:18.881 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:37:18.952 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:37:18.965 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:37:19.318 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:37:19.333 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:37:19.347 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:37:19.368 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:37:19.441 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:37:19.444 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:37:19.447 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:37:19.447 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:37:19.453 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:37:19.456 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:37:19.456 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:37:19.459 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:37:19.493 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:37:19.496 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:37:19.500 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:37:19.507 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:37:19.511 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:37:19.513 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:37:19.516 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:37:19.518 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:37:19.522 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:37:19.525 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:37:19.528 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:37:19.531 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:37:19.533 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:37:19.536 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:37:19.540 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:37:19.542 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:37:19.545 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:37:19.547 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:37:19.550 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:37:19.553 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:37:19.556 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:37:19.559 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:37:19.562 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:37:19.573 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:37:19.582 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:37:20.582 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:37:20.586 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:37:20.589 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:37:20.597 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:37:20.618 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:37:20.623 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:37:20.628 +08:00 [ERR] 處理檔案 3-62 桃園市相同性別終止結婚對數.summary.json 時發生錯誤
+System.Text.Json.JsonException: The JSON value could not be converted to MarriageStatistics.Models.MarriageStats. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at MarriageStatistics.Services.DatabaseService.GetChartDataAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 232
+2025-11-07 19:37:20.636 +08:00 [INF] 圖表資料已更新: 趨勢資料點=5, 區域=14, 同性=0, 異性=620
+2025-11-07 19:41:26.467 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 19:43:08.619 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 19:43:08.684 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 19:43:08.693 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 19:43:08.928 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 19:43:08.945 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 19:43:08.970 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 19:43:09.095 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=0, 不同性別=327
+2025-11-07 19:43:09.100 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=0, 不同性別=310
+2025-11-07 19:43:09.103 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 19:43:09.110 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=0, 不同性別=107
+2025-11-07 19:43:09.117 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 19:43:09.126 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 19:43:09.132 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:43:09.137 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 19:43:09.140 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=0, 不同性別=65
+2025-11-07 19:43:09.143 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=0, 不同性別=55
+2025-11-07 19:43:09.148 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 19:43:09.152 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 19:43:09.156 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:43:09.160 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 19:43:09.162 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=0, 不同性別=30
+2025-11-07 19:43:09.166 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=0, 不同性別=25
+2025-11-07 19:43:09.169 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:43:09.172 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:43:09.175 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 19:43:09.178 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 19:43:09.180 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 19:43:09.184 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=0, 不同性別=11
+2025-11-07 19:43:09.186 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 19:43:09.189 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 19:43:09.191 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:43:09.194 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:43:09.197 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:43:09.201 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 19:43:09.213 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:43:09.255 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 19:43:09.471 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 19:43:09.478 +08:00 [INF] 找到 6 個摘要檔案
+2025-11-07 19:43:09.482 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 19:43:09.502 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=0, 不同性別=620
+2025-11-07 19:43:09.590 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:43:09.618 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:43:09.681 +08:00 [INF] 圖表資料已更新: 趨勢資料點=6, 區域=14, 同性=0, 異性=620
+2025-11-07 19:43:25.956 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:43:25.964 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:43:25.971 +08:00 [INF] 圖表資料已更新: 趨勢資料點=6, 區域=14, 同性=0, 異性=620
+2025-11-07 19:43:30.226 +08:00 [INF] 找到 6 個摘要檔案用於圖表資料
+2025-11-07 19:43:30.228 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=0, 異性=620
+2025-11-07 19:43:30.235 +08:00 [INF] 圖表資料已更新: 趨勢資料點=6, 區域=14, 同性=0, 異性=620
+2025-11-07 19:48:50.113 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 20:03:30.617 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 20:03:30.658 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 20:03:30.669 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 20:03:30.861 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 20:03:30.871 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 20:03:30.875 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 20:03:30.940 +08:00 [INF] [JSON處理] 區域 總計: 總計=327, 相同性別=6, 不同性別=321
+2025-11-07 20:03:30.943 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=15, 不同性別=295
+2025-11-07 20:03:30.945 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=105, 相同性別=0, 不同性別=105
+2025-11-07 20:03:30.947 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=6, 不同性別=101
+2025-11-07 20:03:30.949 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=17, 相同性別=0, 不同性別=17
+2025-11-07 20:03:30.951 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 20:03:30.954 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 20:03:30.956 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 20:03:30.958 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=65, 相同性別=4, 不同性別=61
+2025-11-07 20:03:30.960 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=2, 不同性別=53
+2025-11-07 20:03:30.963 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=44, 相同性別=0, 不同性別=44
+2025-11-07 20:03:30.965 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 20:03:30.967 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 20:03:30.969 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 20:03:30.971 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=30, 相同性別=2, 不同性別=28
+2025-11-07 20:03:30.974 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=2, 不同性別=23
+2025-11-07 20:03:30.977 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 20:03:30.979 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 20:03:30.982 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=10, 相同性別=0, 不同性別=10
+2025-11-07 20:03:30.984 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 20:03:30.986 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 20:03:30.988 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=5, 不同性別=6
+2025-11-07 20:03:30.990 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=1, 相同性別=0, 不同性別=1
+2025-11-07 20:03:30.992 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 20:03:30.994 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 20:03:30.996 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 20:03:30.998 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 20:03:31.000 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 20:03:31.007 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 20:03:31.031 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 20:04:02.724 +08:00 [INF] 嘗試從 C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries 讀取統計摘要
+2025-11-07 20:04:02.758 +08:00 [INF] 找到 7 個摘要檔案
+2025-11-07 20:04:02.766 +08:00 [INF] 讀取最新摘要檔案: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\summaries\api_fetch_20251107_081759.summary.json
+2025-11-07 20:04:02.802 +08:00 [INF] 已讀取摘要資料: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 20:04:02.868 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:02.884 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:02.898 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:19.045 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:19.052 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:19.065 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:19.941 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:19.949 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:19.962 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:21.606 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:21.608 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:21.617 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:27.091 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:27.095 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:27.103 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:28.349 +08:00 [INF] 找到 7 個摘要檔案用於圖表資料
+2025-11-07 20:04:28.352 +08:00 [INF] 已更新最新的圖表資料: 區域數=14, 同性=30, 異性=590
+2025-11-07 20:04:28.359 +08:00 [INF] 圖表資料已更新: 趨勢資料點=7, 區域=14, 同性=30, 異性=590
+2025-11-07 20:04:35.022 +08:00 [INF] BackgroundFetcherService 停止

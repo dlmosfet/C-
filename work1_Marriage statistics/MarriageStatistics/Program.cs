@@ -4,6 +4,14 @@ using System.Text.Encodings.Web;
 using MarriageStatistics.Models;
 using MarriageStatistics.Services;
 using MarriageStatistics;
+using Serilog;
+
+// 設定 Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console(
+        outputTemplate: "{Timestamp:HH:mm:ss} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+    .CreateLogger();
 
 Console.WriteLine("期中作業 - 婚姻統計資料處理與分析");
 // CLI args: --web to start web UI; --fetch or env AUTO_FETCH=1 to auto-fetch API without prompt
@@ -70,9 +78,14 @@ else
 			var dbPath = Path.Combine(appDataDir, "marriage.db");
 			var db = new DatabaseService(dbPath);
 			db.EnsureDatabase();
+			Log.Information("數據庫已初始化: {path}", dbPath);
+			
 			var fetcher = new ApiFetcher(db, appDataDir);
+			Log.Information("初始化 API 抓取器，資料目錄: {dir}", appDataDir);
+			
 			// 目標 API
 			var apiUrl = "https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json";
+			Log.Information("開始抓取 API 資料: {url}", apiUrl);
 			await fetcher.FetchAndStoreAsync(apiUrl, Console.Out);
 		}
 		catch (Exception ex)

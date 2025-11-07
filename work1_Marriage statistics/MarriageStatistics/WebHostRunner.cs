@@ -37,7 +37,9 @@ public static class WebHostRunner
             // 加入 Serilog
             builder.Host.UseSerilog();
             
-            // 設定服務
+            // 設定控制器
+            builder.Services.AddControllers();
+            
             // 優先尋找專案目錄中的 App_Data（與 CLI 模式一致），若找不到則使用發行/執行目錄下的 App_Data
             string? projectDir = null;
             var dirInfo = new DirectoryInfo(AppContext.BaseDirectory);
@@ -101,9 +103,13 @@ public static class WebHostRunner
                 });
             }
 
-            // 設定靜態檔案
+            // 設定靜態檔案與路由
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            
+            // 啟用路由與控制器
+            app.UseRouting();
+            app.MapControllers();
 
             // 全域錯誤處理
             app.UseExceptionHandler(errorApp =>
