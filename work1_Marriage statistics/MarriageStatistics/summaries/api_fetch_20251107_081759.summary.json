@@ -1,0 +1,139 @@
+{
+  "Source": "api_fetch_20251107_081759.json",
+  "Total": 620,
+  "TotalDifferentGender": 590,
+  "TotalSameGender": 30,
+  "ByArea": [
+    {
+      "Area": "總計",
+      "Total": 310,
+      "SameGender": 15,
+      "DifferentGender": 295
+    },
+    {
+      "Area": "竹北市",
+      "Total": 107,
+      "SameGender": 6,
+      "DifferentGender": 101
+    },
+    {
+      "Area": "竹東鎮",
+      "Total": 55,
+      "SameGender": 2,
+      "DifferentGender": 53
+    },
+    {
+      "Area": "湖口鄉",
+      "Total": 39,
+      "SameGender": 0,
+      "DifferentGender": 39
+    },
+    {
+      "Area": "新豐鄉",
+      "Total": 25,
+      "SameGender": 2,
+      "DifferentGender": 23
+    },
+    {
+      "Area": "新埔鎮",
+      "Total": 24,
+      "SameGender": 0,
+      "DifferentGender": 24
+    },
+    {
+      "Area": "關西鎮",
+      "Total": 14,
+      "SameGender": 0,
+      "DifferentGender": 14
+    },
+    {
+      "Area": "北埔鄉",
+      "Total": 11,
+      "SameGender": 5,
+      "DifferentGender": 6
+    },
+    {
+      "Area": "寶山鄉",
+      "Total": 9,
+      "SameGender": 0,
+      "DifferentGender": 9
+    },
+    {
+      "Area": "芎林鄉",
+      "Total": 7,
+      "SameGender": 0,
+      "DifferentGender": 7
+    },
+    {
+      "Area": "尖石鄉",
+      "Total": 6,
+      "SameGender": 0,
+      "DifferentGender": 6
+    },
+    {
+      "Area": "五峰鄉",
+      "Total": 6,
+      "SameGender": 0,
+      "DifferentGender": 6
+    },
+    {
+      "Area": "橫山鄉",
+      "Total": 5,
+      "SameGender": 0,
+      "DifferentGender": 5
+    },
+    {
+      "Area": "峨眉鄉",
+      "Total": 2,
+      "SameGender": 0,
+      "DifferentGender": 2
+    }
+  ],
+  "NationalityBreakdown": {
+    "本國籍": {
+      "Same": 30,
+      "Different": 590,
+      "Total": 620
+    },
+    "大陸": {
+      "Same": 0,
+      "Different": 4,
+      "Total": 4
+    },
+    "印尼": {
+      "Same": 0,
+      "Different": 4,
+      "Total": 4
+    },
+    "新加坡": {
+      "Same": 2,
+      "Different": 8,
+      "Total": 10
+    },
+    "菲律賓": {
+      "Same": 0,
+      "Different": 2,
+      "Total": 2
+    },
+    "緬甸": {
+      "Same": 0,
+      "Different": 26,
+      "Total": 26
+    },
+    "寮國": {
+      "Same": 0,
+      "Different": 2,
+      "Total": 2
+    },
+    "日本": {
+      "Same": 0,
+      "Different": 2,
+      "Total": 2
+    },
+    "其他": {
+      "Same": 0,
+      "Different": 32,
+      "Total": 32
+    }
+  }
+}

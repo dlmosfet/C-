@@ -1,0 +1,466 @@
+2025-11-07 22:22:46.448 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5000
+2025-11-07 22:22:46.492 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 22:22:46.498 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 22:22:46.589 +08:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-11-07 22:22:46.626 +08:00 [FTL] Web 服務啟動失敗
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at MarriageStatistics.WebHostRunner.StartAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\WebHostRunner.cs:line 174
+2025-11-07 22:24:07.478 +08:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-07 22:24:07.569 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 22:24:07.593 +08:00 [DBG] EnsureDatabase: ApiData table ensured
+2025-11-07 22:24:07.598 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 22:24:07.601 +08:00 [DBG] EnsureDatabase: ApiData table ensured
+2025-11-07 22:24:15.771 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5000
+2025-11-07 22:24:15.775 +08:00 [DBG] Hosting starting
+2025-11-07 22:24:15.781 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 22:24:15.785 +08:00 [DBG] BackgroundFetcherService config: FETCH_URL=https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json, FETCH_FILENAME=api_fetch_20251107_081759.json, FETCH_INTERVAL_MINUTES=10
+2025-11-07 22:24:15.786 +08:00 [DBG] BackgroundFetcherService 開始執行 Fetch: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 22:24:15.789 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 22:24:15.791 +08:00 [DBG] [API抓取] 設定: 最大重試次數=3, 延遲=1000ms
+2025-11-07 22:24:15.866 +08:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-07 22:24:15.869 +08:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-07 22:24:15.884 +08:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-11-07 22:24:15.912 +08:00 [FTL] Web 服務啟動失敗
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at MarriageStatistics.WebHostRunner.StartAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\WebHostRunner.cs:line 174
+2025-11-07 22:24:27.791 +08:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-07 22:24:27.858 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 22:24:27.884 +08:00 [DBG] EnsureDatabase: ApiData table ensured
+2025-11-07 22:24:27.889 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 22:24:27.891 +08:00 [DBG] EnsureDatabase: ApiData table ensured
+2025-11-07 22:24:36.051 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5000
+2025-11-07 22:24:36.054 +08:00 [DBG] Hosting starting
+2025-11-07 22:24:36.066 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 22:24:36.069 +08:00 [DBG] BackgroundFetcherService config: FETCH_URL=https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json, FETCH_FILENAME=api_fetch_20251107_081759.json, FETCH_INTERVAL_MINUTES=10
+2025-11-07 22:24:36.071 +08:00 [DBG] BackgroundFetcherService 開始執行 Fetch: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 22:24:36.075 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 22:24:36.077 +08:00 [DBG] [API抓取] 設定: 最大重試次數=3, 延遲=1000ms
+2025-11-07 22:24:36.159 +08:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-07 22:24:36.162 +08:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-07 22:24:36.175 +08:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-11-07 22:24:36.198 +08:00 [FTL] Web 服務啟動失敗
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+ ---> System.Net.Sockets.SocketException (10048): 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at MarriageStatistics.WebHostRunner.StartAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\WebHostRunner.cs:line 174
+2025-11-07 23:24:04.101 +08:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-07 23:24:04.172 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 23:24:04.196 +08:00 [DBG] EnsureDatabase 完成
+2025-11-07 23:24:04.199 +08:00 [DBG] EnsureDatabase 開始，dbPath=C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\App_Data\marriage.db
+2025-11-07 23:24:04.200 +08:00 [DBG] EnsureDatabase 完成
+2025-11-07 23:24:12.461 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5000
+2025-11-07 23:24:12.464 +08:00 [DBG] Hosting starting
+2025-11-07 23:24:12.473 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 23:24:12.477 +08:00 [DBG] BackgroundFetcherService config: FETCH_URL=https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json, FETCH_FILENAME=api_fetch_20251107_081759.json, FETCH_INTERVAL_MINUTES=10
+2025-11-07 23:24:12.480 +08:00 [DBG] BackgroundFetcherService 開始執行 Fetch: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 23:24:12.484 +08:00 [INF] [API抓取] 開始從 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 取得資料
+2025-11-07 23:24:12.487 +08:00 [DBG] [API抓取] 設定: 最大重試次數=3, 延遲=1000ms
+2025-11-07 23:24:12.567 +08:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-11-07 23:24:12.571 +08:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-07 23:24:12.581 +08:00 [INF] Now listening on: http://localhost:5000
+2025-11-07 23:24:12.584 +08:00 [DBG] Loaded hosting startup assembly MarriageStatistics
+2025-11-07 23:24:12.586 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-07 23:24:12.588 +08:00 [INF] Hosting environment: Production
+2025-11-07 23:24:12.593 +08:00 [INF] Content root path: C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics
+2025-11-07 23:24:12.595 +08:00 [DBG] Hosting started
+2025-11-07 23:24:12.601 +08:00 [DBG] Connection id "0HNGU26Q96EOH" accepted.
+2025-11-07 23:24:12.604 +08:00 [DBG] Connection id "0HNGU26Q96EOH" started.
+2025-11-07 23:24:12.628 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-11-07 23:24:12.641 +08:00 [INF] The file /index.html was not modified
+2025-11-07 23:24:12.646 +08:00 [DBG] Handled. Status code: 304 File: /index.html
+2025-11-07 23:24:12.650 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:12.653 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 304 null text/html 25.651ms
+2025-11-07 23:24:12.685 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/styles.css - null null
+2025-11-07 23:24:12.689 +08:00 [DBG] Connection id "0HNGU26Q96EOI" accepted.
+2025-11-07 23:24:12.691 +08:00 [INF] The file /styles.css was not modified
+2025-11-07 23:24:12.692 +08:00 [DBG] Connection id "0HNGU26Q96EOI" started.
+2025-11-07 23:24:12.693 +08:00 [DBG] Handled. Status code: 304 File: /styles.css
+2025-11-07 23:24:12.694 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/scripts.js - null null
+2025-11-07 23:24:12.696 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:12.700 +08:00 [INF] The file /scripts.js was not modified
+2025-11-07 23:24:12.701 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/styles.css - 304 null text/css 15.8303ms
+2025-11-07 23:24:12.703 +08:00 [DBG] Handled. Status code: 304 File: /scripts.js
+2025-11-07 23:24:12.711 +08:00 [DBG] Connection id "0HNGU26Q96EOI" completed keep alive response.
+2025-11-07 23:24:12.713 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/scripts.js - 304 null text/javascript 18.2895ms
+2025-11-07 23:24:12.842 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" accepted.
+2025-11-07 23:24:12.846 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" started.
+2025-11-07 23:24:12.896 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/stats - null null
+2025-11-07 23:24:12.908 +08:00 [DBG] The request path /api/stats does not match a supported file type
+2025-11-07 23:24:12.940 +08:00 [DBG] 1 candidate(s) found for the request path '/api/stats'
+2025-11-07 23:24:12.944 +08:00 [DBG] Request matched endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:12.947 +08:00 [INF] Executing endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:12.952 +08:00 [DBG] CacheService.GetAsync miss key=dashboard:stats
+2025-11-07 23:24:13.129 +08:00 [DBG] CacheService.SetAsync set memcache key=dashboard:stats exp="2025-11-07T15:29:13.1269071+00:00"
+2025-11-07 23:24:13.132 +08:00 [DBG] /api/stats returned lastUpdate="2025-11-07T23:22:31.8783924+08:00" totalMarriages=620
+2025-11-07 23:24:13.136 +08:00 [INF] Writing value of type 'DashboardStats' as Json.
+2025-11-07 23:24:13.143 +08:00 [INF] Executed endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:13.146 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:13.149 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/stats - 200 null application/json; charset=utf-8 252.5388ms
+2025-11-07 23:24:13.158 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/chart-data - null null
+2025-11-07 23:24:13.162 +08:00 [DBG] The request path /api/chart-data does not match a supported file type
+2025-11-07 23:24:13.165 +08:00 [DBG] 1 candidate(s) found for the request path '/api/chart-data'
+2025-11-07 23:24:13.170 +08:00 [DBG] Endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)' with route pattern 'api/chart-data' is valid for the request path '/api/chart-data'
+2025-11-07 23:24:13.174 +08:00 [DBG] Request matched endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:13.177 +08:00 [INF] Executing endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:13.196 +08:00 [INF] Route matched with {action = "Get", controller = "ChartData"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarriageStatistics.Models.ChartData] Get() on controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics).
+2025-11-07 23:24:13.202 +08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-07 23:24:13.205 +08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-07 23:24:13.209 +08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-07 23:24:13.211 +08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-07 23:24:13.213 +08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-07 23:24:13.217 +08:00 [DBG] Executing controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:13.219 +08:00 [DBG] Executed controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:13.243 +08:00 [WRN] 檔案解析失敗: 3-62 桃園市相同性別終止結婚對數.summary.json
+2025-11-07 23:24:13.247 +08:00 [INF] GetChartDataAsync: 讀取 6 個摘要檔案
+2025-11-07 23:24:13.253 +08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-07 23:24:13.258 +08:00 [DBG] No information found on request to perform content negotiation.
+2025-11-07 23:24:13.259 +08:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-07 23:24:13.260 +08:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-07 23:24:13.263 +08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-07 23:24:13.265 +08:00 [INF] Executing ObjectResult, writing value of type 'MarriageStatistics.Models.ChartData'.
+2025-11-07 23:24:13.278 +08:00 [INF] Executed action MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics) in 59.5809ms
+2025-11-07 23:24:13.280 +08:00 [INF] Executed endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:13.281 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:13.282 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/chart-data - 200 null application/json; charset=utf-8 123.6756ms
+2025-11-07 23:24:15.213 +08:00 [INF] [API抓取] 成功取得 105,225 位元組資料，狀態碼: 200
+2025-11-07 23:24:15.244 +08:00 [INF] [API抓取] 資料為陣列格式，包含 28 筆記錄
+2025-11-07 23:24:15.248 +08:00 [DBG] [API抓取] 資料欄位: 行政區域代碼, 區域別, 性別, 總計_總計, 總計_本國籍_合計, 總計_本國籍_已設籍, 總計_本國籍_未設籍, 總計_大陸地區_合計, 總計_大陸地區_已設籍, 總計_大陸地區_未設籍, 總計_港澳地區_合計, 總計_港澳地區_已設籍, 總計_港澳地區_未設籍, 總計_外國籍_合計_計, 總計_外國籍_合計_已設籍, 總計_外國籍_合計_未設籍, 總計_外國籍_東南亞地區_計_小計, 總計_外國籍_東南亞地區_計_已設籍, 總計_外國籍_東南亞地區_計_未設籍, 總計_外國籍_東南亞地區_印尼, 總計_外國籍_東南亞地區_馬來西亞, 總計_外國籍_東南亞地區_新加坡, 總計_外國籍_東南亞地區_菲律賓, 總計_外國籍_東南亞地區_泰國, 總計_外國籍_東南亞地區_緬甸, 總計_外國籍_東南亞地區_越南, 總計_外國籍_東南亞地區_柬埔寨, 總計_外國籍_東南亞地區_寮國, 總計_外國籍_其他國籍_計_小計, 總計_外國籍_其他國籍_計_已設籍, 總計_外國籍_其他國籍_計_未設籍, 總計_外國籍_其他國籍_日本, 總計_外國籍_其他國籍_韓國, 總計_外國籍_其他國籍_美國, 總計_外國籍_其他國籍_加拿大, 總計_外國籍_其他國籍_澳大利亞, 總計_外國籍_其他國籍_紐西蘭, 總計_外國籍_其他國籍_英國, 總計_外國籍_其他國籍_法國, 總計_外國籍_其他國籍_德國, 總計_外國籍_其他國籍_史瓦帝尼, 總計_外國籍_其他國籍_南非, 總計_外國籍_其他國籍_賴索托, 總計_外國籍_其他國籍_模里西斯, 總計_外國籍_其他國籍_其他, 不同性別_總計, 不同性別_本國籍_合計, 不同性別_本國籍_已設籍, 不同性別_本國籍_未設籍, 不同性別_大陸地區_合計, 不同性別_大陸地區_已設籍, 不同性別_大陸地區_未設籍, 不同性別_港澳地區_合計, 不同性別_港澳地區_已設籍, 不同性別_港澳地區_未設籍, 不同性別_外國籍_合計_計, 不同性別_外國籍_合計_已設籍, 不同性別_外國籍_合計_未設籍, 不同性別_外國籍_東南亞地區_計_小計, 不同性別_外國籍_東南亞地區_計_已設籍, 不同性別_外國籍_東南亞地區_計_未設籍, 不同性別_外國籍_東南亞地區_印尼, 不同性別_外國籍_東南亞地區_馬來西亞, 不同性別_外國籍_東南亞地區_新加坡, 不同性別_外國籍_東南亞地區_菲律賓, 不同性別_外國籍_東南亞地區_泰國, 不同性別_外國籍_東南亞地區_緬甸, 不同性別_外國籍_東南亞地區_越南, 不同性別_外國籍_東南亞地區_柬埔寨, 不同性別_外國籍_東南亞地區_寮國, 不同性別_外國籍_其他國籍_計_小計, 不同性別_外國籍_其他國籍_計_已設籍, 不同性別_外國籍_其他國籍_計_未設籍, 不同性別_外國籍_其他國籍_日本, 不同性別_外國籍_其他國籍_韓國, 不同性別_外國籍_其他國籍_美國, 不同性別_外國籍_其他國籍_加拿大, 不同性別_外國籍_其他國籍_澳大利亞, 不同性別_外國籍_其他國籍_紐西蘭, 不同性別_外國籍_其他國籍_英國, 不同性別_外國籍_其他國籍_法國, 不同性別_外國籍_其他國籍_德國, 不同性別_外國籍_其他國籍_史瓦帝尼, 不同性別_外國籍_其他國籍_南非, 不同性別_外國籍_其他國籍_賴索托, 不同性別_外國籍_其他國籍_模里西斯, 不同性別_外國籍_其他國籍_其他, 相同性別_總計, 相同性別_本國籍_合計, 相同性別_本國籍_已設籍, 相同性別_本國籍_未設籍, 相同性別_大陸地區_合計, 相同性別_大陸地區_已設籍, 相同性別_大陸地區_未設籍, 相同性別_港澳地區_合計, 相同性別_港澳地區_已設籍, 相同性別_港澳地區_未設籍, 相同性別_外國籍_合計_計, 相同性別_外國籍_合計_已設籍, 相同性別_外國籍_合計_未設籍, 相同性別_外國籍_東南亞地區_計_小計, 相同性別_外國籍_東南亞地區_計_已設籍, 相同性別_外國籍_東南亞地區_計_未設籍, 相同性別_外國籍_東南亞地區_印尼, 相同性別_外國籍_東南亞地區_馬來西亞, 相同性別_外國籍_東南亞地區_新加坡, 相同性別_外國籍_東南亞地區_菲律賓, 相同性別_外國籍_東南亞地區_泰國, 相同性別_外國籍_東南亞地區_緬甸, 相同性別_外國籍_東南亞地區_越南, 相同性別_外國籍_東南亞地區_柬埔寨, 相同性別_外國籍_東南亞地區_寮國, 相同性別_外國籍_其他國籍_計_小計, 相同性別_外國籍_其他國籍_計_已設籍, 相同性別_外國籍_其他國籍_計_未設籍, 相同性別_外國籍_其他國籍_日本, 相同性別_外國籍_其他國籍_韓國, 相同性別_外國籍_其他國籍_美國, 相同性別_外國籍_其他國籍_加拿大, 相同性別_外國籍_其他國籍_澳大利亞, 相同性別_外國籍_其他國籍_紐西蘭, 相同性別_外國籍_其他國籍_英國, 相同性別_外國籍_其他國籍_法國, 相同性別_外國籍_其他國籍_德國, 相同性別_外國籍_其他國籍_史瓦帝尼, 相同性別_外國籍_其他國籍_南非, 相同性別_外國籍_其他國籍_賴索托, 相同性別_外國籍_其他國籍_模里西斯, 相同性別_外國籍_其他國籍_其他
+2025-11-07 23:24:15.254 +08:00 [INF] [API抓取] 開始儲存和處理資料
+2025-11-07 23:24:15.259 +08:00 [DBG] ApiFetcher calling UpsertApiDataAsync for https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 23:24:15.264 +08:00 [DBG] UpsertApiDataAsync 開始: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 23:24:15.301 +08:00 [DBG] UpsertApiDataAsync 完成: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 23:24:15.304 +08:00 [DBG] ApiFetcher UpsertApiDataAsync completed for https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+2025-11-07 23:24:15.309 +08:00 [DBG] ApiFetcher wrote JSON to api_fetch_20251107_081759.json
+2025-11-07 23:24:15.311 +08:00 [DBG] ApiFetcher invoking IJsonProcessor for api_fetch_20251107_081759.json
+2025-11-07 23:24:15.325 +08:00 [DBG] [JSON處理] 開始處理檔案: api_fetch_20251107_081759.json
+2025-11-07 23:24:15.366 +08:00 [DBG] [JSON處理] 處理區域: 總計
+2025-11-07 23:24:15.371 +08:00 [INF] [JSON處理] 區域 總計: 總計=310, 相同性別=15, 不同性別=295
+2025-11-07 23:24:15.374 +08:00 [DBG] [JSON處理] 處理區域: 竹北市
+2025-11-07 23:24:15.375 +08:00 [INF] [JSON處理] 區域 竹北市: 總計=107, 相同性別=6, 不同性別=101
+2025-11-07 23:24:15.381 +08:00 [DBG] [JSON處理] 處理區域: 關西鎮
+2025-11-07 23:24:15.383 +08:00 [INF] [JSON處理] 區域 關西鎮: 總計=14, 相同性別=0, 不同性別=14
+2025-11-07 23:24:15.386 +08:00 [DBG] [JSON處理] 處理區域: 新埔鎮
+2025-11-07 23:24:15.389 +08:00 [INF] [JSON處理] 區域 新埔鎮: 總計=24, 相同性別=0, 不同性別=24
+2025-11-07 23:24:15.392 +08:00 [DBG] [JSON處理] 處理區域: 竹東鎮
+2025-11-07 23:24:15.394 +08:00 [INF] [JSON處理] 區域 竹東鎮: 總計=55, 相同性別=2, 不同性別=53
+2025-11-07 23:24:15.399 +08:00 [DBG] [JSON處理] 處理區域: 湖口鄉
+2025-11-07 23:24:15.401 +08:00 [INF] [JSON處理] 區域 湖口鄉: 總計=39, 相同性別=0, 不同性別=39
+2025-11-07 23:24:15.404 +08:00 [DBG] [JSON處理] 處理區域: 橫山鄉
+2025-11-07 23:24:15.406 +08:00 [INF] [JSON處理] 區域 橫山鄉: 總計=5, 相同性別=0, 不同性別=5
+2025-11-07 23:24:15.409 +08:00 [DBG] [JSON處理] 處理區域: 新豐鄉
+2025-11-07 23:24:15.415 +08:00 [INF] [JSON處理] 區域 新豐鄉: 總計=25, 相同性別=2, 不同性別=23
+2025-11-07 23:24:15.418 +08:00 [DBG] [JSON處理] 處理區域: 芎林鄉
+2025-11-07 23:24:15.420 +08:00 [INF] [JSON處理] 區域 芎林鄉: 總計=7, 相同性別=0, 不同性別=7
+2025-11-07 23:24:15.423 +08:00 [DBG] [JSON處理] 處理區域: 寶山鄉
+2025-11-07 23:24:15.424 +08:00 [INF] [JSON處理] 區域 寶山鄉: 總計=9, 相同性別=0, 不同性別=9
+2025-11-07 23:24:15.431 +08:00 [DBG] [JSON處理] 處理區域: 北埔鄉
+2025-11-07 23:24:15.434 +08:00 [INF] [JSON處理] 區域 北埔鄉: 總計=11, 相同性別=5, 不同性別=6
+2025-11-07 23:24:15.437 +08:00 [DBG] [JSON處理] 處理區域: 峨眉鄉
+2025-11-07 23:24:15.440 +08:00 [INF] [JSON處理] 區域 峨眉鄉: 總計=2, 相同性別=0, 不同性別=2
+2025-11-07 23:24:15.443 +08:00 [DBG] [JSON處理] 處理區域: 尖石鄉
+2025-11-07 23:24:15.447 +08:00 [INF] [JSON處理] 區域 尖石鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 23:24:15.451 +08:00 [DBG] [JSON處理] 處理區域: 五峰鄉
+2025-11-07 23:24:15.453 +08:00 [INF] [JSON處理] 區域 五峰鄉: 總計=6, 相同性別=0, 不同性別=6
+2025-11-07 23:24:15.473 +08:00 [INF] [JSON處理] 統計結果: 總計=620, 相同性別=30, 不同性別=590
+2025-11-07 23:24:15.482 +08:00 [DBG] [JSON處理] 國籍 本國籍: 總計=620, 不同性別=590, 相同性別=30
+2025-11-07 23:24:15.485 +08:00 [DBG] [JSON處理] 國籍 其他: 總計=32, 不同性別=32, 相同性別=0
+2025-11-07 23:24:15.490 +08:00 [DBG] [JSON處理] 國籍 緬甸: 總計=26, 不同性別=26, 相同性別=0
+2025-11-07 23:24:15.494 +08:00 [DBG] [JSON處理] 國籍 新加坡: 總計=10, 不同性別=8, 相同性別=2
+2025-11-07 23:24:15.497 +08:00 [DBG] [JSON處理] 國籍 大陸: 總計=4, 不同性別=4, 相同性別=0
+2025-11-07 23:24:15.499 +08:00 [DBG] [JSON處理] 國籍 印尼: 總計=4, 不同性別=4, 相同性別=0
+2025-11-07 23:24:15.502 +08:00 [DBG] [JSON處理] 國籍 菲律賓: 總計=2, 不同性別=2, 相同性別=0
+2025-11-07 23:24:15.508 +08:00 [DBG] [JSON處理] 國籍 寮國: 總計=2, 不同性別=2, 相同性別=0
+2025-11-07 23:24:15.511 +08:00 [DBG] [JSON處理] 國籍 日本: 總計=2, 不同性別=2, 相同性別=0
+2025-11-07 23:24:15.526 +08:00 [DBG] ApiFetcher IJsonProcessor completed for api_fetch_20251107_081759.json
+2025-11-07 23:24:15.530 +08:00 [DBG] CacheService.DeleteAsync deleting memcache key=dashboard:stats
+2025-11-07 23:24:15.532 +08:00 [DBG] CacheService.DeleteAsync deleting memcache key=entries:list
+2025-11-07 23:24:15.533 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json
+2025-11-07 23:24:15.535 +08:00 [DBG] BackgroundFetcherService Fetch result: 開始從 API 取得資料: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+已儲存至本機資料庫。
+已另存原始 JSON 至: api_fetch_20251107_081759.json
+
+處理 14 個區域（每區僅取最新一筆）...
+區域: 總計         總計:    310 相同性別:     15 不同性別:    295
+區域: 竹北市        總計:    107 相同性別:      6 不同性別:    101
+區域: 關西鎮        總計:     14 相同性別:      0 不同性別:     14
+區域: 新埔鎮        總計:     24 相同性別:      0 不同性別:     24
+區域: 竹東鎮        總計:     55 相同性別:      2 不同性別:     53
+區域: 湖口鄉        總計:     39 相同性別:      0 不同性別:     39
+區域: 橫山鄉        總計:      5 相同性別:      0 不同性別:      5
+區域: 新豐鄉        總計:     25 相同性別:      2 不同性別:     23
+區域: 芎林鄉        總計:      7 相同性別:      0 不同性別:      7
+區域: 寶山鄉        總計:      9 相同性別:      0 不同性別:      9
+區域: 北埔鄉        總計:     11 相同性別:      5 不同性別:      6
+區域: 峨眉鄉        總計:      2 相同性別:      0 不同性別:      2
+區域: 尖石鄉        總計:      6 相同性別:      0 不同性別:      6
+區域: 五峰鄉        總計:      6 相同性別:      0 不同性別:      6
+
+婚姻統計摘要：
+區域　　　　　總計　不同性別　相同性別
+========================================
+總計              310      295       15
+竹北市             107      101        6
+竹東鎮              55       53        2
+湖口鄉              39       39        0
+新豐鄉              25       23        2
+新埔鎮              24       24        0
+關西鎮              14       14        0
+北埔鄉              11        6        5
+寶山鄉               9        9        0
+芎林鄉               7        7        0
+尖石鄉               6        6        0
+五峰鄉               6        6        0
+橫山鄉               5        5        0
+峨眉鄉               2        2        0
+----------------------------------------
+總計　　　　    620      590       30
+
+國籍統計：
+國籍　　　　　總計　不同性別　相同性別
+========================================
+本國籍             620      590       30
+其他               32       32        0
+緬甸               26       26        0
+新加坡              10        8        2
+大陸                4        4        0
+印尼                4        4        0
+菲律賓               2        2        0
+寮國                2        2        0
+日本                2        2        0
+
+已輸出統計摘要: summaries\api_fetch_20251107_081759.summary.json
+
+2025-11-07 23:24:17.878 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" received FIN.
+2025-11-07 23:24:17.883 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-07 23:24:17.890 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" disconnecting.
+2025-11-07 23:24:17.898 +08:00 [DBG] Connection id "0HNGU26Q96EOJ" stopped.
+2025-11-07 23:24:24.392 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/details.html - null null
+2025-11-07 23:24:24.409 +08:00 [INF] The file /details.html was not modified
+2025-11-07 23:24:24.416 +08:00 [DBG] Handled. Status code: 304 File: /details.html
+2025-11-07 23:24:24.426 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:24.446 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/details.html - 304 null text/html 52.9952ms
+2025-11-07 23:24:24.513 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/chart-data - null null
+2025-11-07 23:24:24.518 +08:00 [DBG] The request path /api/chart-data does not match a supported file type
+2025-11-07 23:24:24.525 +08:00 [DBG] 1 candidate(s) found for the request path '/api/chart-data'
+2025-11-07 23:24:24.530 +08:00 [DBG] Endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)' with route pattern 'api/chart-data' is valid for the request path '/api/chart-data'
+2025-11-07 23:24:24.541 +08:00 [DBG] Request matched endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:24.545 +08:00 [INF] Executing endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:24.548 +08:00 [INF] Route matched with {action = "Get", controller = "ChartData"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarriageStatistics.Models.ChartData] Get() on controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics).
+2025-11-07 23:24:24.551 +08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-07 23:24:24.557 +08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-07 23:24:24.560 +08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-07 23:24:24.566 +08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-07 23:24:24.573 +08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-07 23:24:24.579 +08:00 [DBG] Executing controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:24.581 +08:00 [DBG] Executed controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:24.593 +08:00 [WRN] 檔案解析失敗: 3-62 桃園市相同性別終止結婚對數.summary.json
+2025-11-07 23:24:24.598 +08:00 [INF] GetChartDataAsync: 讀取 6 個摘要檔案
+2025-11-07 23:24:24.606 +08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-07 23:24:24.611 +08:00 [DBG] No information found on request to perform content negotiation.
+2025-11-07 23:24:24.615 +08:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-07 23:24:24.617 +08:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-07 23:24:24.620 +08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-07 23:24:24.623 +08:00 [INF] Executing ObjectResult, writing value of type 'MarriageStatistics.Models.ChartData'.
+2025-11-07 23:24:24.626 +08:00 [INF] Executed action MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics) in 47.216ms
+2025-11-07 23:24:24.628 +08:00 [INF] Executed endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:24.632 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:24.635 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/chart-data - 200 null application/json; charset=utf-8 121.36ms
+2025-11-07 23:24:24.642 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/entries - null null
+2025-11-07 23:24:24.648 +08:00 [DBG] The request path /api/entries does not match a supported file type
+2025-11-07 23:24:24.649 +08:00 [DBG] 1 candidate(s) found for the request path '/api/entries'
+2025-11-07 23:24:24.650 +08:00 [DBG] Request matched endpoint 'HTTP: GET /api/entries'
+2025-11-07 23:24:24.654 +08:00 [INF] Executing endpoint 'HTTP: GET /api/entries'
+2025-11-07 23:24:24.658 +08:00 [DBG] CacheService.GetAsync miss key=entries:list
+2025-11-07 23:24:24.663 +08:00 [DBG] GetEntriesAsync returned 5 entries
+2025-11-07 23:24:24.667 +08:00 [DBG] CacheService.SetAsync set memcache key=entries:list exp="2025-11-07T15:25:24.6674532+00:00"
+2025-11-07 23:24:24.671 +08:00 [DBG] /api/entries returned 5 entries
+2025-11-07 23:24:24.674 +08:00 [INF] Writing value of type 'List`1' as Json.
+2025-11-07 23:24:24.676 +08:00 [INF] Executed endpoint 'HTTP: GET /api/entries'
+2025-11-07 23:24:24.680 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:24.683 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/entries - 200 null application/json; charset=utf-8 41.0503ms
+2025-11-07 23:24:25.511 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/stats - null null
+2025-11-07 23:24:25.518 +08:00 [DBG] The request path /api/stats does not match a supported file type
+2025-11-07 23:24:25.522 +08:00 [DBG] 1 candidate(s) found for the request path '/api/stats'
+2025-11-07 23:24:25.526 +08:00 [DBG] Request matched endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:25.528 +08:00 [INF] Executing endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:25.530 +08:00 [DBG] CacheService.GetAsync miss key=dashboard:stats
+2025-11-07 23:24:25.536 +08:00 [DBG] CacheService.SetAsync set memcache key=dashboard:stats exp="2025-11-07T15:29:25.5361250+00:00"
+2025-11-07 23:24:25.541 +08:00 [DBG] /api/stats returned lastUpdate="2025-11-07T23:24:15.2840243+08:00" totalMarriages=620
+2025-11-07 23:24:25.546 +08:00 [INF] Writing value of type 'DashboardStats' as Json.
+2025-11-07 23:24:25.548 +08:00 [INF] Executed endpoint 'HTTP: GET /api/stats'
+2025-11-07 23:24:25.550 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:25.554 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/stats - 200 null application/json; charset=utf-8 42.1638ms
+2025-11-07 23:24:25.562 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/chart-data - null null
+2025-11-07 23:24:25.567 +08:00 [DBG] The request path /api/chart-data does not match a supported file type
+2025-11-07 23:24:25.569 +08:00 [DBG] 1 candidate(s) found for the request path '/api/chart-data'
+2025-11-07 23:24:25.573 +08:00 [DBG] Endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)' with route pattern 'api/chart-data' is valid for the request path '/api/chart-data'
+2025-11-07 23:24:25.576 +08:00 [DBG] Request matched endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:25.579 +08:00 [INF] Executing endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:25.590 +08:00 [INF] Route matched with {action = "Get", controller = "ChartData"}. Executing controller action with signature System.Threading.Tasks.Task`1[MarriageStatistics.Models.ChartData] Get() on controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics).
+2025-11-07 23:24:25.594 +08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-07 23:24:25.600 +08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-07 23:24:25.607 +08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-07 23:24:25.616 +08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-07 23:24:25.629 +08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-07 23:24:25.633 +08:00 [DBG] Executing controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:25.638 +08:00 [DBG] Executed controller factory for controller MarriageStatistics.Controllers.ChartDataController (MarriageStatistics)
+2025-11-07 23:24:25.660 +08:00 [WRN] 檔案解析失敗: 3-62 桃園市相同性別終止結婚對數.summary.json
+2025-11-07 23:24:25.664 +08:00 [INF] GetChartDataAsync: 讀取 6 個摘要檔案
+2025-11-07 23:24:25.667 +08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-07 23:24:25.675 +08:00 [DBG] No information found on request to perform content negotiation.
+2025-11-07 23:24:25.677 +08:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-07 23:24:25.679 +08:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-07 23:24:25.681 +08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-07 23:24:25.684 +08:00 [INF] Executing ObjectResult, writing value of type 'MarriageStatistics.Models.ChartData'.
+2025-11-07 23:24:25.692 +08:00 [INF] Executed action MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics) in 58.3299ms
+2025-11-07 23:24:25.695 +08:00 [INF] Executed endpoint 'MarriageStatistics.Controllers.ChartDataController.Get (MarriageStatistics)'
+2025-11-07 23:24:25.698 +08:00 [DBG] Connection id "0HNGU26Q96EOH" completed keep alive response.
+2025-11-07 23:24:25.703 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/chart-data - 200 null application/json; charset=utf-8 141.0585ms

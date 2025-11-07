@@ -11,6 +11,19 @@ public class CountryMapper
 {
     private readonly Dictionary<string, string> _map = new(StringComparer.OrdinalIgnoreCase);
 
+    public string GetMappedCountry(string country)
+    {
+        if (string.IsNullOrWhiteSpace(country)) return string.Empty;
+
+        // 嘗試在映射中尋找標準名稱
+        var normalized = Normalize(country);
+        if (_map.TryGetValue(normalized, out var mapped))
+            return mapped;
+
+        // 如果找不到映射，直接返回原始國籍
+        return country;
+    }
+
     public CountryMapper()
     {
         // attempt to load json mapping

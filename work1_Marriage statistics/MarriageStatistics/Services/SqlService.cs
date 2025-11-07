@@ -78,6 +78,7 @@ END
     public IEnumerable<(long Id, string SourceUrl, string RawJson, string RetrievedAt)> QueryAll(string prefer = "sqlite")
     {
         // Keep simple: prefer SQLite for quick reads; SQL Server listing can be added if needed.
-        return _sqlite.QueryAll();
+        // Map sqlite's (int Id, ...) to long Id for the SQL-facing API
+        return _sqlite.QueryAll().Select(t => ((long)t.Id, t.SourceUrl, t.RawJson, t.RetrievedAt));
     }
 }

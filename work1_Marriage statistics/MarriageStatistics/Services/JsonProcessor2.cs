@@ -44,67 +44,69 @@ public static class JsonProcessor2
             if (root.ValueKind == JsonValueKind.Array)
             {
                 var items = root.EnumerateArray().ToList();
-                
                 // 針對婚姻統計資料的特殊處理
                 if (items.Count > 0 && items[0].TryGetProperty("區域別", out _))
                 {
-                    // 統計各區域的婚姻數據
+                    // 只統計每個區域最新一筆（以區域別分組，取最後一筆）
+                    var latestByArea = items
+                        .Where(x => x.TryGetProperty("區域別", out _))
+                        .GroupBy(x => x.GetProperty("區域別").GetString() ?? "未知")
+                        .ToDictionary(g => g.Key, g => g.Last());
+
                     var stats = new Dictionary<string, (int total, int same, int different)>();
                     var nationality = new Dictionary<string, NationalityCount>();
-                    
-                    output.WriteLine($"\n處理 {items.Count} 筆資料記錄...");
-                    foreach (var item in items)
+
+                    output.WriteLine($"\n處理 {latestByArea.Count} 個區域（每區僅取最新一筆）...");
+                    foreach (var kv in latestByArea)
                     {
-                        if (item.TryGetProperty("區域別", out var areaElement))
+                        var area = kv.Key;
+                        var item = kv.Value;
+                        Log.Debug("[JSON處理] 處理區域: {Area}", area);
+
+                        // 處理基本統計
+                        var total = GetInt(item, "總計_總計");
+                        var same = GetInt(item, "相同性別_總計");
+                        var different = GetInt(item, "不同性別_總計");
+
+                        stats[area] = (total, same, different);
+
+                        // 處理國籍資料
+                        AddNationalityCount(nationality, "本國籍",
+                            GetInt(item, "相同性別_本國籍_合計"),
+                            GetInt(item, "不同性別_本國籍_合計"));
+
+                        AddNationalityCount(nationality, "大陸",
+                            GetInt(item, "相同性別_大陸地區_合計"),
+                            GetInt(item, "不同性別_大陸地區_合計"));
+
+                        AddNationalityCount(nationality, "港澳",
+                            GetInt(item, "相同性別_港澳地區_合計"),
+                            GetInt(item, "不同性別_港澳地區_合計"));
+
+                        // 東南亞國家
+                        foreach (var country in SeaCountries)
                         {
-                            var area = areaElement.GetString() ?? "未知";
-                            Log.Debug("[JSON處理] 處理區域: {Area}", area);
-                            
-                            // 處理基本統計
-                            var total = GetInt(item, "總計_總計");
-                            var same = GetInt(item, "相同性別_總計");
-                            var different = GetInt(item, "不同性別_總計");
-                            
-                            stats[area] = (total, same, different);
-                            
-                            // 處理國籍資料
-                            AddNationalityCount(nationality, "本國籍",
-                                GetInt(item, "相同性別_本國籍_合計"),
-                                GetInt(item, "不同性別_本國籍_合計"));
-                                
-                            AddNationalityCount(nationality, "大陸",
-                                GetInt(item, "相同性別_大陸地區_合計"),
-                                GetInt(item, "不同性別_大陸地區_合計"));
-                                
-                            AddNationalityCount(nationality, "港澳",
-                                GetInt(item, "相同性別_港澳地區_合計"),
-                                GetInt(item, "不同性別_港澳地區_合計"));
-                            
-                            // 東南亞國家
-                            foreach (var country in SeaCountries)
-                            {
-                                AddNationalityCount(nationality, country,
-                                    GetInt(item, $"相同性別_外國籍_東南亞地區_{country}"),
-                                    GetInt(item, $"不同性別_外國籍_東南亞地區_{country}"));
-                            }
-                            
-                            // 其他國籍
-                            foreach (var country in OtherCountries)
-                            {
-                                AddNationalityCount(nationality, country,
-                                    GetInt(item, $"相同性別_外國籍_其他國籍_{country}"),
-                                    GetInt(item, $"不同性別_外國籍_其他國籍_{country}"));
-                            }
-                            
-                            // 其他未分類
-                            AddNationalityCount(nationality, "其他",
-                                GetInt(item, "相同性別_外國籍_其他國籍_其他"),
-                                GetInt(item, "不同性別_外國籍_其他國籍_其他"));
-                            
-                            Log.Information("[JSON處理] 區域 {Area}: 總計={Total}, 相同性別={Same}, 不同性別={Diff}", 
-                                area, total, same, different);
-                            output.WriteLine($"區域: {area,-10} 總計: {total,6} 相同性別: {same,6} 不同性別: {different,6}");
+                            AddNationalityCount(nationality, country,
+                                GetInt(item, $"相同性別_外國籍_東南亞地區_{country}"),
+                                GetInt(item, $"不同性別_外國籍_東南亞地區_{country}"));
                         }
+
+                        // 其他國籍
+                        foreach (var country in OtherCountries)
+                        {
+                            AddNationalityCount(nationality, country,
+                                GetInt(item, $"相同性別_外國籍_其他國籍_{country}"),
+                                GetInt(item, $"不同性別_外國籍_其他國籍_{country}"));
+                        }
+
+                        // 其他未分類
+                        AddNationalityCount(nationality, "其他",
+                            GetInt(item, "相同性別_外國籍_其他國籍_其他"),
+                            GetInt(item, "不同性別_外國籍_其他國籍_其他"));
+
+                        Log.Information("[JSON處理] 區域 {Area}: 總計={Total}, 相同性別={Same}, 不同性別={Diff}", 
+                            area, total, same, different);
+                        output.WriteLine($"區域: {area,-10} 總計: {total,6} 相同性別: {same,6} 不同性別: {different,6}");
                     }
 
                     if (stats.Any())
@@ -137,6 +139,8 @@ public static class JsonProcessor2
                             foreach (var kvp in nationality.OrderByDescending(x => x.Value.Total))
                             {
                                 output.WriteLine($"{kvp.Key,-12} {kvp.Value.Total,6} {kvp.Value.Different,8} {kvp.Value.Same,8}");
+                                Log.Debug("[JSON處理] 國籍 {Nation}: 總計={Total}, 不同性別={Diff}, 相同性別={Same}",
+                                    kvp.Key, kvp.Value.Total, kvp.Value.Different, kvp.Value.Same);
                             }
                         }
 

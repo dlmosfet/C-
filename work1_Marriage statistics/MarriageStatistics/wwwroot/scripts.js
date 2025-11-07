@@ -91,6 +91,11 @@ const initCharts = () => {
             labels: [],
             datasets: [{
                 label: '結婚對數',
+                options: {
+                    animation: {
+                        duration: 1000
+                    }
+                },
                 data: [],
                 borderColor: 'rgb(var(--bs-primary-rgb))',
                 tension: 0.1,
@@ -99,7 +104,8 @@ const initCharts = () => {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
             scales: {
                 x: {
                     title: {
@@ -120,6 +126,11 @@ const initCharts = () => {
                         text: '結婚對數'
                     },
                     beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top'
                 }
             }
         }
@@ -199,7 +210,7 @@ const initCharts = () => {
         }
     })
 
-    // 國籍分布：直方圖（前 12 名）與分類圓餅（本國籍 / 大陸 / 港澳 / 外國籍）
+    // 國籍分布：直方圖（前 10 名）與分類圓餅（本國籍 / 大陸 / 港澳 / 外國籍）
     const natBarCtx = document.getElementById('nationality-bar').getContext('2d')
     new Chart(natBarCtx, {
         type: 'bar',
@@ -220,7 +231,8 @@ const initCharts = () => {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 1.5,
             plugins: {
                 title: {
                     display: true,
@@ -352,10 +364,17 @@ async function updateCharts() {
         if (natBar) {
             // 若後端提供 breakdown，使用同/異兩列；否則把 total 填入不同性別欄位
             if (data.nationalityBreakdown && Object.keys(data.nationalityBreakdown).length) {
-                // 依總和排序取 top 12
-                const items = Object.entries(data.nationalityBreakdown).map(([k, v]) => ({ country: k, same: v.same ?? v.Same ?? 0, diff: v.different ?? v.Different ?? 0 }));
+                // 過濾掉本國籍並依總和排序取 top 10
+                const items = Object.entries(data.nationalityBreakdown)
+                    .map(([k, v]) => ({ 
+                        country: k, 
+                        same: v.same ?? v.Same ?? 0, 
+                        diff: v.different ?? v.Different ?? 0 
+                    }))
+                    .filter(item => !['本國籍', '台灣', '臺灣', '中華民國', 'taiwan', 'taiwanese']
+                        .includes(item.country.toLowerCase()));
                 items.sort((a,b) => (b.same + b.diff) - (a.same + a.diff));
-                const topItems = items.slice(0,12);
+                const topItems = items.slice(0,10);
                 natBar.data.labels = topItems.map(i => i.country);
                 natBar.data.datasets[0].data = topItems.map(i => i.same);
                 natBar.data.datasets[1].data = topItems.map(i => i.diff);
