@@ -1,0 +1,78 @@
+2025-11-07 17:00:24.578 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:00:30.778 +08:00 [ERR] GetEntriesAsync 失敗
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ApiData'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync()
+   at MarriageStatistics.Services.DatabaseService.GetEntriesAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 77
+2025-11-07 17:00:30.778 +08:00 [ERR] GetDashboardStatsAsync 失敗
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ApiData'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync()
+   at MarriageStatistics.Services.DatabaseService.GetDashboardStatsAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 139
+2025-11-07 17:00:40.067 +08:00 [ERR] InsertApiDataAsync 失敗: https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ApiData'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at MarriageStatistics.Services.DatabaseService.InsertApiDataAsync(String url, String rawJson) in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 58
+2025-11-07 17:00:40.087 +08:00 [ERR] 儲存至資料庫失敗
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ApiData'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at MarriageStatistics.Services.DatabaseService.InsertApiDataAsync(String url, String rawJson) in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 58
+   at MarriageStatistics.Services.ApiFetcher.FetchAndStoreAsync(String url, TextWriter output) in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\ApiFetcher.cs:line 81
+2025-11-07 17:00:40.210 +08:00 [ERR] GetEntriesAsync 失敗
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ApiData'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync()
+   at MarriageStatistics.Services.DatabaseService.GetEntriesAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 77
+2025-11-07 17:12:34.449 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:12:41.138 +08:00 [ERR] GetDashboardStatsAsync 失敗
+System.InvalidOperationException: The data is NULL at ordinal 1. This method can't be called on NULL values. Check using IsDBNull before calling.
+   at Microsoft.Data.Sqlite.SqliteValueReader.GetString(Int32 ordinal)
+   at Microsoft.Data.Sqlite.SqliteDataReader.GetString(Int32 ordinal)
+   at MarriageStatistics.Services.DatabaseService.GetDashboardStatsAsync() in C:\Users\jackyjuang\Desktop\C#\work1_Marriage statistics\MarriageStatistics\Services\DatabaseService.cs:line 143
+2025-11-07 17:15:00.702 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:26:26.220 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:32:38.651 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:43:00.108 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 17:43:00.158 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 1 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 17:43:02.888 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:44:04.402 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:45:04.674 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:46:05.146 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:47:06.924 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:48:07.608 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:49:08.063 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。
+2025-11-07 17:49:48.597 +08:00 [INF] BackgroundFetcherService 停止
+2025-11-07 18:06:10.145 +08:00 [INF] 啟動 Web 服務，監聽於 http://localhost:5566
+2025-11-07 18:06:10.197 +08:00 [INF] BackgroundFetcherService 啟動 - 將每 10 分鐘抓取 https://ws.hsinchu.gov.tw/001/Upload/1/opendata/8774/341/b95a118f-e411-4cb3-a990-99c67407fa87.json 並儲存為 api_fetch_20251107_081759.json
+2025-11-07 18:06:10.586 +08:00 [INF] BackgroundFetcherService 已完成一次抓取。檔案=api_fetch_20251107_081759.json

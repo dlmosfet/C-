@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MarriageStatistics</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Exclude nested ConsoleApp source files (these belong to a different sample project) -->
+  <ItemGroup>
+    <Compile Remove="ConsoleApp\**\*.cs" />
+    <None Remove="ConsoleApp\**\*" />
+  </ItemGroup>
+
+  <!-- Ensure App_Data is not treated as content to copy -->
+  <ItemGroup>
+    <None Update="App_Data\**\*">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- 核心套件依賴 -->
+  <ItemGroup>
+    <!-- 資料庫存取 -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.12" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.0" />
+    
+    <!-- 快取服務 -->
+    <PackageReference Include="StackExchange.Redis" Version="2.10.1" />
+    
+    <!-- Web API 相關 -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.0-preview.1.24081.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    
+    <!-- 日誌與監控 -->
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <!-- 開發工具 -->
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.0-preview.1.24081.5" />
+  </ItemGroup>
+
+
+</Project>

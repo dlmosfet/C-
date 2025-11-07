@@ -1,0 +1,74 @@
+/* 全域設定 */
+:root {
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-body-bg-rgb: 248, 249, 250;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg-rgb: 33, 37, 41;
+}
+
+/* 導航欄樣式 */
+.navbar-brand i {
+    margin-right: 0.5rem;
+}
+
+/* 卡片樣式 */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* 儀表板數字 */
+.display-4 {
+    font-weight: 600;
+}
+
+/* 圖表容器 */
+.chart-container {
+    position: relative;
+    height: 300px;
+}
+
+/* 主題切換按鈕 */
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+/* 表格樣式 */
+.table-hover tbody tr:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* 載入動畫 */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(var(--bs-body-bg-rgb), 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
